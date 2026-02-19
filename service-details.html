@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Detalhes do Serviço - Estética & Bem-estar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Custom Calendar Styles */
+        .calendar-container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fff;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            text-align: center;
+        }
+
+        .calendar-day-name {
+            font-weight: bold;
+            color: #555;
+            padding: 10px 0;
+        }
+
+        .calendar-day {
+            padding: 15px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .calendar-day:hover:not(.empty) {
+            background-color: #f0f0f0;
+        }
+
+        .calendar-day.empty {
+            cursor: default;
+        }
+
+        .calendar-day.today {
+            border: 2px solid #e8308c;
+            font-weight: bold;
+        }
+
+        .calendar-day.selected {
+            background-color: #e8308c;
+            color: white;
+        }
+
+        .slots-container {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 10px;
+        }
+
+        .time-slot {
+            padding: 10px;
+            border: 1px solid #e8308c;
+            color: #e8308c;
+            border-radius: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .time-slot:hover {
+            background-color: #e8308c;
+            color: white;
+        }
+
+        .time-slot.occupied {
+            background-color: #eee;
+            border-color: #ccc;
+            color: #999;
+            cursor: not-allowed;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+        <header class="site-navbar" role="banner">
+
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-11 col-xl-4">
+                        <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">Estúdio Michelle
+                                Xavier<span class="text-primary"></span> <lord-icon
+                                    src="https://cdn.lordicon.com/hcghxuhk.json" trigger="in" delay="1500"
+                                    state="in-reveal" colors="primary:#e8b730" style="width:30px;height:30px">
+                                </lord-icon></a></h1>
+                    </div>
+                    <div class="col-12 col-md-8 d-none d-xl-block">
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+
+                            <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                                <li><a href="index.html"><span class="d-inline-flex flex-column align-items-center">
+                                            <lord-icon src="https://cdn.lordicon.com/jeuxydnh.json" trigger="hover"
+                                                state="hover-partial-roll" colors="primary:#ffffff,secondary:#e8308c"
+                                                style="width:24px;height:24px">
+                                            </lord-icon>
+                                            Início</span></a></li>
+                                <li class="has-children active">
+                                    <a href="services.html"><span class="d-inline-flex flex-column align-items-center">
+                                            <lord-icon src="https://cdn.lordicon.com/jectmwqf.json" trigger="hover"
+                                                colors="primary:#ffffff,secondary:#e8308c"
+                                                style="width:24px;height:24px">
+                                            </lord-icon>
+                                            Serviços</span></a>
+                                    <ul class="dropdown arrow-top">
+                                        <li><a href="#">Depilação a Cera</a></li>
+                                        <li><a href="#">Massagem Relaxante</a></li>
+                                        <li><a href="#">Pedras Quentes</a></li>
+                                        <li class="has-children">
+                                            <a href="#">Terapias</a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Ventosaterapia</a></li>
+                                                <li><a href="#">Pedras Quentes</a></li>
+                                                <li><a href="#">Massagem Relaxante</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html"><span class="d-inline-flex flex-column align-items-center">
+                                            <lord-icon src="https://cdn.lordicon.com/wjyqkiew.json" trigger="morph"
+                                                state="morph-check" colors="primary:#ffffff,secondary:#e8308c"
+                                                style="width:24px;height:24px">
+                                            </lord-icon>
+                                            Sobre</span></a></li>
+                                <li><a href="blog.html"><span class="d-inline-flex flex-column align-items-center">
+                                            <lord-icon src="https://cdn.lordicon.com/cvwrvyjv.json" trigger="hover"
+                                                state="hover-wink" colors="primary:#e8308c,secondary:#ffffff"
+                                                style="width:24px;height:24px">
+                                            </lord-icon>
+                                            Dicas e Novidades</span></a></li>
+                                <li><a href="contact.html"><span class="d-inline-flex flex-column align-items-center">
+                                            <lord-icon src="https://cdn.lordicon.com/fozsorqm.json" trigger="hover"
+                                                state="hover-conversation-alt"
+                                                colors="primary:#121331,secondary:#e8308c"
+                                                style="width:24px;height:24px">
+                                            </lord-icon>
+                                            Contato</span></a></li>
+                                <li><a href="login.html"><span class="d-inline-flex flex-column align-items-center">
+                                            <lord-icon src="https://cdn.lordicon.com/dxjqoygy.json" trigger="hover"
+                                                colors="primary:#121331,secondary:#e8b730"
+                                                style="width:24px;height:24px">
+                                            </lord-icon>
+                                            Gestão</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                    <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a
+                            href="#" class="site-menu-toggle js-menu-toggle text-white"><span
+                                class="icon-menu h3"></span></a></div>
+
+                </div>
+
+            </div>
+    </div>
+
+    </header>
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade"
+        data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+
+                <div class="col-md-10">
+
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-md-10 text-center">
+                            <h1 data-aos="fade-up" class="mb-5">Detalhes do <span class="typed-words"></span></h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div id="service-content">
+                        <!-- Content loaded via JS -->
+                        <p class="text-center">Carregando detalhes do serviço...</p>
+                    </div>
+
+                    <div class="mt-5">
+                        <h3 class="mb-4 d-flex align-items-center">
+                            <lord-icon src="https://cdn.lordicon.com/uphbloed.json" trigger="hover"
+                                state="hover-flutter" colors="primary:#e8308c,secondary:#121331"
+                                style="width:40px;height:40px" class="mr-2">
+                            </lord-icon>
+                            Agendar Horário
+                        </h3>
+                        <div class="calendar-container">
+                            <div class="calendar-header">
+                                <button class="btn btn-sm btn-outline-primary" id="prevMonth">&lt;</button>
+                                <h4 id="monthYear" class="mb-0"></h4>
+                                <button class="btn btn-sm btn-outline-primary" id="nextMonth">&gt;</button>
+                            </div>
+                            <div class="calendar-grid" id="calendarDays">
+                                <!-- Days generated via JS -->
+                            </div>
+                        </div>
+
+                        <div id="slotsContainer" class="slots-container" style="display:none;">
+                            <!-- Slots generated via JS -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title d-flex align-items-center" id="bookingModalLabel">
+                        <lord-icon src="https://cdn.lordicon.com/lvrxlmju.json" trigger="hover" colors="primary:#e8b730"
+                            style="width:50px;height:50px" class="mr-2">
+                        </lord-icon>
+                        Confirmar Agendamento
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Serviço:</strong> <span id="modalService"></span></p>
+                    <p><strong>Data:</strong> <span id="modalDate"></span></p>
+                    <p><strong>Horário:</strong> <span id="modalTime"></span></p>
+                    <p><strong>Preço:</strong> <span id="modalPrice"></span></p>
+
+                    <hr>
+                    <p class="text-center mb-3 d-flex align-items-center justify-content-center">
+                        <lord-icon src="https://cdn.lordicon.com/fikcyfpp.json" trigger="hover"
+                            colors="primary:#121331,secondary:#e8b730" style="width:30px;height:30px" class="mr-2">
+                        </lord-icon>
+                        Preencha seus dados para pagamento via PIX:
+                    </p>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="buyerName" placeholder="Nome Completo">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="buyerCpf" placeholder="CPF (somente números)">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="buyerEmail" placeholder="E-mail">
+                    </div>
+
+                    <div id="payment-area">
+                        <button
+                            class="btn btn-success btn-block btn-pill d-flex align-items-center justify-content-center"
+                            onclick="generatePixPayment()">
+                            <lord-icon src="https://cdn.lordicon.com/ggnoyhfp.json" trigger="hover"
+                                colors="primary:#121331,secondary:#ffffff style=" width:30px;height:30px" class="mr-2">
+                            </lord-icon>
+                            Gerar PIX
+                        </button>
+                    </div>
+
+                    <div id="pix-result" class="text-center mt-3" style="display:none;">
+                        <p>Escaneie o QR Code abaixo:</p>
+                        <img id="qrcode-img" src="" alt="QR Code PIX" class="img-fluid mb-2" style="max-width: 200px;">
+                        <p>Ou copie o código:</p>
+                        <textarea id="pix-code" class="form-control mb-2" rows="3" readonly></textarea>
+                        <button class="btn btn-outline-primary btn-sm" onclick="copyPixCode()">Copiar Código</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                            <h2 class="footer-heading mb-4">Links Rápidos</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Sobre Nós</a></li>
+                                <li><a href="#">Serviços</a></li>
+                                <li><a href="#">Depoimentos</a></li>
+                                <li><a href="#">Fale Conosco</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                            <h2 class="footer-heading mb-4">Tratamentos</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Depilação a Cera</a></li>
+                                <li><a href="#">Massagem Relaxante</a></li>
+                                <li><a href="#">Pedras Quentes</a></li>
+                                <li><a href="#">Ventosaterapia</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                            <h2 class="footer-heading mb-4">Destaques</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Relaxamento</a></li>
+                                <li><a href="#">Bem-estar</a></li>
+                                <li><a href="#">Estética</a></li>
+                                <li><a href="#">Saúde</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                            <h2 class="footer-heading mb-4">Siga-nos</h2>
+                            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h2 class="footer-heading mb-4">Assine nossa Newsletter</h2>
+                    <p>Receba novidades e promoções exclusivas diretamente no seu e-mail.</p>
+                    <form action="#" method="post" class="subscription">
+                        <div class="input-group mb-3  d-flex align-items-stretch">
+                            <input type="text" class="form-control bg-transparent" placeholder="Seu E-mail"
+                                aria-label="Enter Email" aria-describedby="button-addon2">
+                            <button class="btn btn-primary text-white" type="button" id="button-addon2">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5">
+                <div class="col-12 text-md-center text-left">
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+        var typed = new Typed('.typed-words', {
+            strings: ["Serviço"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 4000,
+            startDelay: 1000,
+            loop: false,
+            showCursor: true
+        });
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <!-- PayPal SDK -->
+    <!-- Banco Inter PIX Integration -->
+
+    <script>
+        // Dados dos Serviços
+        const serviceData = {
+            'waxing': {
+                title: 'Depilação a Cera',
+                description: 'Técnica eficiente para remoção de pelos, proporcionando pele lisa e macia por semanas. Utilizamos ceras de alta qualidade para minimizar desconforto.',
+                image: 'images/img_1.jpg',
+                options: [
+                    { name: 'Buço', price: 'R$ 15,00', rawPrice: 15.00 },
+                    { name: 'Mento (queixo)', price: 'R$ 15,00', rawPrice: 15.00 },
+                    { name: 'Axilas', price: 'R$ 25,00', rawPrice: 25.00 },
+                    { name: 'Linha alba (barriga)', price: 'R$ 15,00', rawPrice: 15.00 },
+                    { name: 'Virilha simples', price: 'R$ 30,00', rawPrice: 30.00 },
+                    { name: 'Virilha cavada', price: 'R$ 40,00', rawPrice: 40.00 },
+                    { name: 'Virilha completa', price: 'R$ 50,00', rawPrice: 50.00 },
+                    { name: 'Íntima completa', price: 'R$ 60,00', rawPrice: 60.00 },
+                    { name: 'Nádegas', price: 'R$ 30,00', rawPrice: 30.00 },
+                    { name: 'Meia perna', price: 'R$ 30,00', rawPrice: 30.00 },
+                    { name: 'Perna completa', price: 'R$ 50,00', rawPrice: 50.00 }
+                ]
+            },
+            'massage': {
+                title: 'Massagem Relaxante',
+                description: 'Movimentos suaves e rítmicos para aliviar o estresse, melhorar a circulação e relaxar a musculatura. Ideal para quem busca tranquilidade.',
+                image: 'images/img_2.jpg',
+                options: [
+                    { name: 'Massagem Relaxante', price: 'R$ 120,00', rawPrice: 120.00 }, // Manter o base
+                    { name: 'Massagem relaxante + ventosaterapia', price: 'R$ 79,99', rawPrice: 79.99 },
+                    { name: 'Massagem relaxante + pedras quentes', price: 'R$ 59,99', rawPrice: 59.99 },
+                    { name: 'Massagem relaxante + pedras quentes + ventosaterapia', price: 'R$ 99,99', rawPrice: 99.99 }
+                ]
+            },
+            'stones': {
+                title: 'Pedras Quentes',
+                description: 'Terapia que combina massagem com a aplicação de pedras aquecidas em pontos estratégicos do corpo. Promove relaxamento profundo e alívio de dores.',
+                price: 'R$ 150,00',
+                rawPrice: 150.00,
+                image: 'images/img_3.jpg'
+            },
+            'cupping': {
+                title: 'Ventosaterapia',
+                description: 'Técnica que utiliza sucção por copos para estimular o fluxo sanguíneo, liberar toxinas e aliviar tensões musculares.',
+                price: 'R$ 80,00',
+                rawPrice: 80.00,
+                image: 'images/img_4.jpg'
+            }
+        };
+
+        // Get URL Params
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceId = urlParams.get('service') || 'waxing';
+        const currentService = serviceData[serviceId] || serviceData['waxing'];
+
+        // Load Service Content
+        // Initialize current service with default values
+        let selectedOption = null;
+        const originalTitle = currentService.title;
+
+        $(document).ready(function () {
+            let priceHtml = '';
+            let optionsHtml = '';
+
+            if (currentService.options) {
+                // Default to first option
+                selectedOption = currentService.options[0];
+                currentService.price = selectedOption.price;
+                currentService.rawPrice = selectedOption.rawPrice;
+                currentService.title = `${originalTitle} - ${selectedOption.name}`;
+
+                optionsHtml = `
+                    <div class="form-group mt-3">
+                        <label for="serviceOption">Escolha uma opção:</label>
+                        <select class="form-control" id="serviceOption" onchange="updateServiceOption(this.value)">
+                            ${currentService.options.map((opt, index) => `<option value="${index}">${opt.name} - ${opt.price}</option>`).join('')}
+                        </select>
+                    </div>
+                `;
+                priceHtml = `<p class="text-primary h5" id="displayPrice">Valor: ${currentService.price}</p>`;
+            } else {
+                priceHtml = `<p class="text-primary h5">Valor por sessão: ${currentService.price}</p>`;
+            }
+
+            $('#service-content').html(`
+        <p class="mb-4"><img src="${currentService.image}" alt="Image" class="img-fluid rounded"></p>
+        <h2 class="mb-4" id="displayTitle">${currentService.title}</h2>
+        <p>${currentService.description}</p>
+        ${optionsHtml}
+        ${priceHtml}
+      `);
+
+
+
+            renderCalendar();
+        });
+
+        function updateServiceOption(index) {
+            selectedOption = currentService.options[index];
+            currentService.price = selectedOption.price;
+            currentService.rawPrice = selectedOption.rawPrice;
+            currentService.title = `${originalTitle} - ${selectedOption.name}`;
+
+            $('#displayTitle').text(currentService.title);
+            $('#displayPrice').text(`Valor: ${currentService.price}`);
+
+        }
+
+        // Lógica do Calendário
+        let currentDate = new Date();
+
+        function renderCalendar() {
+            const monthYear = document.getElementById('monthYear');
+            const calendarDays = document.getElementById('calendarDays');
+
+            const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+
+            monthYear.innerText = `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
+
+            calendarDays.innerHTML = '';
+
+            // Dias
+            const weekDays = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+            weekDays.forEach(day => {
+                const div = document.createElement('div');
+                div.className = 'calendar-day-name';
+                div.innerText = day;
+                calendarDays.appendChild(div);
+            });
+
+            const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
+            const lastDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+
+            // Espaços vazios
+            for (let i = 0; i < firstDay; i++) {
+                const div = document.createElement('div');
+                div.className = 'calendar-day empty';
+                calendarDays.appendChild(div);
+            }
+
+            // Dias
+            const today = new Date();
+            for (let i = 1; i <= lastDate; i++) {
+                const div = document.createElement('div');
+                div.className = 'calendar-day';
+                div.innerText = i;
+
+                let checkDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), i);
+
+                if (checkDate.toDateString() === today.toDateString()) {
+                    div.classList.add('today');
+                }
+
+                // Desabilitar datas passadas
+                if (checkDate < today.setHours(0, 0, 0, 0)) {
+                    div.classList.add('empty');
+                    div.style.opacity = '0.5';
+                } else {
+                    div.onclick = () => selectDate(i, div);
+                }
+
+                calendarDays.appendChild(div);
+            }
+        }
+
+        document.getElementById('prevMonth').onclick = () => {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            renderCalendar();
+        };
+
+        document.getElementById('nextMonth').onclick = () => {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            renderCalendar();
+        };
+
+        let selectedDateObj = null;
+
+        function selectDate(day, element) {
+            document.querySelectorAll('.calendar-day').forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+
+            selectedDateObj = new Date(currentDate.getFullYear(), currentDate.getMonth(), day);
+
+            showSlots(selectedDateObj);
+        }
+
+        function showSlots(date) {
+            const container = document.getElementById('slotsContainer');
+            container.style.display = 'grid';
+            container.innerHTML = '';
+
+            // Gerar horários aleatórios (Simulado)
+            // Horário de funcionamento: 9h - 18h
+            const startHour = 17;
+            const endHour = 21;
+
+            for (let h = startHour; h < endHour; h++) {
+                const slotDiv = document.createElement('div');
+                slotDiv.className = 'time-slot';
+                slotDiv.innerText = `${h}:00`;
+
+                // Randomly occupy slots
+                // const occupied = Math.random() > 0.7;
+                const occupied = false; // All free for demo
+
+                if (occupied) {
+                    slotDiv.classList.add('occupied');
+                } else {
+                    slotDiv.onclick = () => openBooking(date, `${h}:00`);
+                }
+                container.appendChild(slotDiv);
+            }
+        }
+
+        function openBooking(date, time) {
+            document.getElementById('modalService').innerText = currentService.title;
+            document.getElementById('modalDate').innerText = date.toLocaleDateString('pt-BR');
+            document.getElementById('modalTime').innerText = time;
+            document.getElementById('modalPrice').innerText = currentService.price;
+
+            $('#bookingModal').modal('show');
+
+            // Reset modal state
+            document.getElementById('payment-area').style.display = 'block';
+            document.getElementById('pix-result').style.display = 'none';
+        }
+
+        function generatePixPayment() {
+            const name = document.getElementById('buyerName').value;
+            const cpf = document.getElementById('buyerCpf').value;
+            const email = document.getElementById('buyerEmail').value;
+
+            if (!name || !cpf || !email) {
+                alert("Por favor, preencha todos os campos.");
+                return;
+            }
+
+            // Chamada ao Backend (Banco Inter PIX)
+            const backendUrl = "http://localhost:3000/api/pix/generate";
+
+            // Visual feedback
+            const btn = document.querySelector('#payment-area button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Gerando PIX...';
+            btn.disabled = true;
+
+            fetch(backendUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    referenceId: 'REF-' + Date.now(),
+                    serviceName: currentService.title, // Send service name
+                    value: currentService.rawPrice,
+                    buyer: {
+                        firstName: name.split(' ')[0],
+                        lastName: name.split(' ').slice(1).join(' ') || '',
+                        document: cpf,
+                        email: email,
+                        phone: '+55 27 12345-6789'
+                    }
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+
+                    if (data.qrcode) {
+                        document.getElementById('payment-area').style.display = 'none';
+                        // Check if qrcode is object (Inter returns generic)
+                        if (data.qrcode.base64) {
+                            document.getElementById('qrcode-img').src = data.qrcode.base64;
+                        } else {
+                            // Fallback
+                            document.getElementById('qrcode-img').alt = "QR Code gerado";
+                        }
+
+                        document.getElementById('pix-code').value = data.qrcode.content || data.qrcode;
+                        document.getElementById('pix-result').style.display = 'block';
+                    } else if (data.error) {
+                        alert('Erro ao gerar PIX: ' + data.error);
+                    } else {
+                        alert('Erro desconhecido ao gerar PIX.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    alert('Erro na comunicação com o servidor. Verifique se o backend está rodando em http://localhost:3000');
+                });
+        }
+
+        function copyPixCode() {
+            const copyText = document.getElementById("pix-code");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("Código PIX copiado!");
+        }
+
+    </script>
+
+</body>
+
+</html>

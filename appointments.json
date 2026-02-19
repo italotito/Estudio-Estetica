@@ -1,0 +1,32 @@
+[
+  {
+    "id": "MANUAL-1771504443786",
+    "date": "2026-02-21T22:37:00.000Z",
+    "clientName": "joao",
+    "clientEmail": "agendamento@manual.com",
+    "service": "Ventosaterapia",
+    "value": 200,
+    "status": "confirmed",
+    "observation": "Agendamento Manual"
+  },
+  {
+    "id": "MANUAL-1771504426493",
+    "date": "2026-02-20T12:21:00.000Z",
+    "clientName": "maria",
+    "clientEmail": "agendamento@manual.com",
+    "service": "Depilação a Cera",
+    "value": 100,
+    "status": "confirmed",
+    "observation": "Agendamento Manual"
+  },
+  {
+    "id": "MANUAL-1771466505729",
+    "date": "2026-02-18T03:02:00.000Z",
+    "clientName": "123123",
+    "clientEmail": "agendamento@manual.com",
+    "service": "Depilação a Cera",
+    "value": 1233,
+    "status": "confirmed",
+    "observation": "Agendamento Manual"
+  }
+]
