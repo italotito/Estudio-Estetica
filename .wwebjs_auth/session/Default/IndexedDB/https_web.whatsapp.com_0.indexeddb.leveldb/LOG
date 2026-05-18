@@ -1,0 +1,122 @@
+2026/03/14-18:25:39.738 ec8 Reusing MANIFEST T:\estudos\code\HTML\html-css\estudio-estetica-master\estudio-estetica-master\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/14-18:25:39.741 ec8 Recovering log #3379
+2026/03/14-18:25:39.741 ec8 Reusing old log T:\estudos\code\HTML\html-css\estudio-estetica-master\estudio-estetica-master\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/003379.log 
+2026/03/14-18:25:40.512 42d4 Compacting 1@0 + 2@1 files
+2026/03/14-18:25:40.592 42d4 Generated table #3385@0: 97910 keys, 1136352 bytes
+2026/03/14-18:25:40.609 42d4 Generated table #3386@0: 16854 keys, 805838 bytes
+2026/03/14-18:25:40.617 42d4 Generated table #3387@0: 11267 keys, 223006 bytes
+2026/03/14-18:25:40.617 42d4 Compacted 1@0 + 2@1 files => 2165196 bytes
+2026/03/14-18:25:40.618 42d4 compacted to: files[ 0 3 34 0 0 0 0 ]
+2026/03/14-18:25:40.619 42d4 Delete type=2 #3375
+2026/03/14-18:25:40.619 42d4 Delete type=2 #3376
+2026/03/14-18:25:40.619 42d4 Delete type=2 #3380
+2026/03/14-18:25:40.900 ec8 Compacting 1@1 + 6@2 files
+2026/03/14-18:25:41.001 ec8 Generated table #3388@1: 86057 keys, 2235973 bytes
+2026/03/14-18:25:41.058 ec8 Generated table #3389@1: 97865 keys, 2249924 bytes
+2026/03/14-18:25:41.123 ec8 Generated table #3390@1: 87292 keys, 2414991 bytes
+2026/03/14-18:25:41.181 ec8 Generated table #3391@1: 36994 keys, 2205180 bytes
+2026/03/14-18:25:41.220 ec8 Generated table #3392@1: 23451 keys, 1372655 bytes
+2026/03/14-18:25:41.220 ec8 Compacted 1@1 + 6@2 files => 10478723 bytes
+2026/03/14-18:25:41.221 ec8 compacted to: files[ 0 2 33 0 0 0 0 ]
+2026/03/14-18:25:41.524 ec8 Compacting 1@1 + 10@2 files
+2026/03/14-18:25:41.598 ec8 Generated table #3393@1: 20862 keys, 2190502 bytes
+2026/03/14-18:25:41.752 ec8 Generated table #3394@1: 28291 keys, 2267082 bytes
+2026/03/14-18:25:41.863 ec8 Generated table #3395@1: 24813 keys, 2251473 bytes
+2026/03/14-18:25:42.002 ec8 Generated table #3396@1: 36994 keys, 2249121 bytes
+2026/03/14-18:25:42.052 ec8 Generated table #3397@1: 15501 keys, 2185994 bytes
+2026/03/14-18:25:42.075 ec8 Generated table #3398@1: 1885 keys, 2123084 bytes
+2026/03/14-18:25:42.115 ec8 Generated table #3399@1: 16585 keys, 2146284 bytes
+2026/03/14-18:25:42.146 ec8 Generated table #3400@1: 7466 keys, 2132903 bytes
+2026/03/14-18:25:42.213 ec8 Generated table #3401@1: 75259 keys, 2214702 bytes
+2026/03/14-18:25:42.298 ec8 Generated table #3402@1: 99290 keys, 2249161 bytes
+2026/03/14-18:25:42.328 ec8 Generated table #3403@1: 34978 keys, 789533 bytes
+2026/03/14-18:25:42.328 ec8 Compacted 1@1 + 10@2 files => 22799839 bytes
+2026/03/14-18:25:42.329 ec8 compacted to: files[ 0 1 34 0 0 0 0 ]
+2026/03/14-18:25:42.329 ec8 Delete type=2 #3307
+2026/03/14-18:25:42.329 ec8 Delete type=2 #3310
+2026/03/14-18:25:42.329 ec8 Delete type=2 #3311
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3312
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3356
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3357
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3358
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3359
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3360
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3363
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3364
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3365
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3366
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3367
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3368
+2026/03/14-18:25:42.330 ec8 Delete type=2 #3369
+2026/03/14-18:25:42.331 ec8 Delete type=2 #3385
+2026/03/14-18:25:42.331 ec8 Delete type=2 #3386
+2026/03/14-18:25:48.724 3adc Compacting 1@1 + 3@2 files
+2026/03/14-18:25:48.829 3adc Generated table #3404@1: 99033 keys, 2248379 bytes
+2026/03/14-18:25:48.922 3adc Generated table #3405@1: 99402 keys, 2248675 bytes
+2026/03/14-18:25:49.010 3adc Generated table #3406@1: 89489 keys, 2238399 bytes
+2026/03/14-18:25:49.016 3adc Generated table #3407@1: 1858 keys, 201391 bytes
+2026/03/14-18:25:49.016 3adc Compacted 1@1 + 3@2 files => 6936844 bytes
+2026/03/14-18:25:49.017 3adc compacted to: files[ 0 0 35 0 0 0 0 ]
+2026/03/14-18:25:51.773 ec8 Level-0 table #3409: started
+2026/03/14-18:25:51.804 ec8 Level-0 table #3409: 1218833 bytes OK
+2026/03/14-18:25:51.805 ec8 Delete type=2 #3378
+2026/03/14-18:25:51.805 ec8 Delete type=0 #3379
+2026/03/14-18:25:51.806 ec8 Delete type=2 #3381
+2026/03/14-18:25:51.806 ec8 Delete type=2 #3382
+2026/03/14-18:25:51.806 ec8 Delete type=2 #3387
+2026/03/14-18:25:51.810 ec8 Compacting 1@0 + 0@1 files
+2026/03/14-18:25:51.859 ec8 Generated table #3410@0: 26366 keys, 1058665 bytes
+2026/03/14-18:25:51.861 ec8 Generated table #3411@0: 96 keys, 9822 bytes
+2026/03/14-18:25:51.861 ec8 Compacted 1@0 + 0@1 files => 1068487 bytes
+2026/03/14-18:25:51.862 ec8 compacted to: files[ 0 2 35 0 0 0 0 ]
+2026/03/14-18:25:51.865 ec8 Compacting 1@1 + 5@2 files
+2026/03/14-18:25:51.955 ec8 Generated table #3412@1: 76077 keys, 2225385 bytes
+2026/03/14-18:25:52.071 ec8 Generated table #3413@1: 96680 keys, 2249061 bytes
+2026/03/14-18:25:52.180 ec8 Generated table #3414@1: 101370 keys, 2253253 bytes
+2026/03/14-18:25:52.248 ec8 Generated table #3415@1: 29707 keys, 2361599 bytes
+2026/03/14-18:25:52.342 ec8 Generated table #3416@1: 40000 keys, 1895921 bytes
+2026/03/14-18:25:52.342 ec8 Compacted 1@1 + 5@2 files => 10985219 bytes
+2026/03/14-18:25:52.343 ec8 compacted to: files[ 0 1 35 0 0 0 0 ]
+2026/03/14-18:25:52.344 ec8 Delete type=2 #3388
+2026/03/14-18:25:52.344 ec8 Delete type=2 #3389
+2026/03/14-18:25:52.344 ec8 Delete type=2 #3390
+2026/03/14-18:25:52.344 ec8 Delete type=2 #3391
+2026/03/14-18:25:52.344 ec8 Delete type=2 #3392
+2026/03/14-18:25:52.344 ec8 Delete type=2 #3409
+2026/03/14-18:25:52.344 ec8 Delete type=2 #3410
+2026/03/14-18:25:52.468 ec8 Level-0 table #3418: started
+2026/03/14-18:25:52.501 ec8 Level-0 table #3418: 1216407 bytes OK
+2026/03/14-18:25:52.503 ec8 Delete type=0 #3408
+2026/03/14-18:25:52.507 ec8 Compacting 1@1 + 5@2 files
+2026/03/14-18:25:52.614 ec8 Generated table #3419@1: 63308 keys, 2208596 bytes
+2026/03/14-18:25:52.712 ec8 Generated table #3420@1: 95636 keys, 2248127 bytes
+2026/03/14-18:25:52.811 ec8 Generated table #3421@1: 100796 keys, 2253006 bytes
+2026/03/14-18:25:52.890 ec8 Generated table #3422@1: 48507 keys, 2386762 bytes
+2026/03/14-18:25:52.994 ec8 Generated table #3423@1: 48855 keys, 2210250 bytes
+2026/03/14-18:25:53.001 ec8 Generated table #3424@1: 794 keys, 299339 bytes
+2026/03/14-18:25:53.001 ec8 Compacted 1@1 + 5@2 files => 11606080 bytes
+2026/03/14-18:25:53.002 ec8 compacted to: files[ 0 1 36 0 0 0 0 ]
+2026/03/14-18:25:53.075 ec8 Level-0 table #3426: started
+2026/03/14-18:25:53.101 ec8 Level-0 table #3426: 983400 bytes OK
+2026/03/14-18:25:53.102 ec8 Delete type=2 #3412
+2026/03/14-18:25:53.102 ec8 Delete type=2 #3413
+2026/03/14-18:25:53.103 ec8 Delete type=2 #3414
+2026/03/14-18:25:53.103 ec8 Delete type=2 #3415
+2026/03/14-18:25:53.103 ec8 Delete type=2 #3416
+2026/03/14-18:25:53.103 ec8 Delete type=0 #3417
+2026/03/14-18:25:53.103 ec8 Delete type=2 #3418
+2026/03/14-18:25:53.108 ec8 Compacting 1@1 + 5@2 files
+2026/03/14-18:25:53.192 ec8 Generated table #3427@1: 54023 keys, 2200581 bytes
+2026/03/14-18:25:53.271 ec8 Generated table #3428@1: 95617 keys, 2248733 bytes
+2026/03/14-18:25:53.345 ec8 Generated table #3429@1: 99408 keys, 2251472 bytes
+2026/03/14-18:25:53.396 ec8 Generated table #3430@1: 66084 keys, 2399302 bytes
+2026/03/14-18:25:53.450 ec8 Generated table #3431@1: 46701 keys, 2215500 bytes
+2026/03/14-18:25:53.461 ec8 Generated table #3432@1: 8339 keys, 512544 bytes
+2026/03/14-18:25:53.461 ec8 Compacted 1@1 + 5@2 files => 11828132 bytes
+2026/03/14-18:25:53.461 ec8 compacted to: files[ 0 1 37 0 0 0 0 ]
+2026/03/14-18:25:53.462 ec8 Delete type=2 #3419
+2026/03/14-18:25:53.462 ec8 Delete type=2 #3420
+2026/03/14-18:25:53.462 ec8 Delete type=2 #3421
+2026/03/14-18:25:53.462 ec8 Delete type=2 #3422
+2026/03/14-18:25:53.462 ec8 Delete type=2 #3423
+2026/03/14-18:25:53.462 ec8 Delete type=2 #3426

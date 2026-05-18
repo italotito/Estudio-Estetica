@@ -33,6 +33,7 @@
             padding: 20px;
             border-radius: 8px;
             background: #fff;
+            max-width: 350px;
         }
 
         .calendar-header {
@@ -71,12 +72,12 @@
         }
 
         .calendar-day.today {
-            border: 2px solid #e8308c;
+            border: 2px solid #e8b730;
             font-weight: bold;
         }
 
         .calendar-day.selected {
-            background-color: #e8308c;
+            background-color: #e8b730;
             color: white;
         }
 
@@ -85,12 +86,13 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
             gap: 10px;
+            max-width: 350px;
         }
 
         .time-slot {
             padding: 10px;
-            border: 1px solid #e8308c;
-            color: #e8308c;
+            border: 1px solid #e8b730;
+            color: #e8b730;
             border-radius: 20px;
             text-align: center;
             cursor: pointer;
@@ -98,7 +100,7 @@
         }
 
         .time-slot:hover {
-            background-color: #e8308c;
+            background-color: #e8b730;
             color: white;
         }
 
@@ -107,6 +109,14 @@
             border-color: #ccc;
             color: #999;
             cursor: not-allowed;
+        }
+
+        @media (max-width: 768px) {
+
+            .calendar-container,
+            .slots-container {
+                max-width: 100%;
+            }
         }
     </style>
 
@@ -131,7 +141,7 @@
                 <div class="row align-items-center">
 
                     <div class="col-11 col-xl-4">
-                        <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">Estúdio Michelle
+                        <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">Estúdio Estética
                                 Xavier<span class="text-primary"></span> <lord-icon
                                     src="https://cdn.lordicon.com/hcghxuhk.json" trigger="in" delay="1500"
                                     state="in-reveal" colors="primary:#e8b730" style="width:30px;height:30px">
@@ -143,47 +153,35 @@
                             <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                                 <li><a href="index.html"><span class="d-inline-flex flex-column align-items-center">
                                             <lord-icon src="https://cdn.lordicon.com/jeuxydnh.json" trigger="hover"
-                                                state="hover-partial-roll" colors="primary:#ffffff,secondary:#e8308c"
+                                                state="hover-partial-roll" colors="primary:#ffffff,secondary:#e8b730"
                                                 style="width:24px;height:24px">
                                             </lord-icon>
                                             Início</span></a></li>
-                                <li class="has-children active">
+                                <li class="active">
                                     <a href="services.html"><span class="d-inline-flex flex-column align-items-center">
                                             <lord-icon src="https://cdn.lordicon.com/jectmwqf.json" trigger="hover"
-                                                colors="primary:#ffffff,secondary:#e8308c"
+                                                colors="primary:#ffffff,secondary:#e8b730"
                                                 style="width:24px;height:24px">
                                             </lord-icon>
                                             Serviços</span></a>
-                                    <ul class="dropdown arrow-top">
-                                        <li><a href="#">Depilação a Cera</a></li>
-                                        <li><a href="#">Massagem Relaxante</a></li>
-                                        <li><a href="#">Pedras Quentes</a></li>
-                                        <li class="has-children">
-                                            <a href="#">Terapias</a>
-                                            <ul class="dropdown">
-                                                <li><a href="#">Ventosaterapia</a></li>
-                                                <li><a href="#">Pedras Quentes</a></li>
-                                                <li><a href="#">Massagem Relaxante</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+
                                 </li>
                                 <li><a href="about.html"><span class="d-inline-flex flex-column align-items-center">
                                             <lord-icon src="https://cdn.lordicon.com/wjyqkiew.json" trigger="morph"
-                                                state="morph-check" colors="primary:#ffffff,secondary:#e8308c"
+                                                state="morph-check" colors="primary:#ffffff,secondary:#e8b730"
                                                 style="width:24px;height:24px">
                                             </lord-icon>
                                             Sobre</span></a></li>
                                 <li><a href="blog.html"><span class="d-inline-flex flex-column align-items-center">
                                             <lord-icon src="https://cdn.lordicon.com/cvwrvyjv.json" trigger="hover"
-                                                state="hover-wink" colors="primary:#e8308c,secondary:#ffffff"
+                                                state="hover-wink" colors="primary:#e8b730,secondary:#ffffff"
                                                 style="width:24px;height:24px">
                                             </lord-icon>
                                             Dicas e Novidades</span></a></li>
                                 <li><a href="contact.html"><span class="d-inline-flex flex-column align-items-center">
                                             <lord-icon src="https://cdn.lordicon.com/fozsorqm.json" trigger="hover"
                                                 state="hover-conversation-alt"
-                                                colors="primary:#121331,secondary:#e8308c"
+                                                colors="primary:#121331,secondary:#e8b730"
                                                 style="width:24px;height:24px">
                                             </lord-icon>
                                             Contato</span></a></li>
@@ -192,7 +190,7 @@
                                                 colors="primary:#121331,secondary:#e8b730"
                                                 style="width:24px;height:24px">
                                             </lord-icon>
-                                            Gestão</span></a></li>
+                                            <span style="color: #121331;">Gestão</span></span></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -240,7 +238,7 @@
                     <div class="mt-5">
                         <h3 class="mb-4 d-flex align-items-center">
                             <lord-icon src="https://cdn.lordicon.com/uphbloed.json" trigger="hover"
-                                state="hover-flutter" colors="primary:#e8308c,secondary:#121331"
+                                state="hover-flutter" colors="primary:#e8b730,secondary:#e8b730"
                                 style="width:40px;height:40px" class="mr-2">
                             </lord-icon>
                             Agendar Horário
@@ -252,12 +250,12 @@
                                 <button class="btn btn-sm btn-outline-primary" id="nextMonth">&gt;</button>
                             </div>
                             <div class="calendar-grid" id="calendarDays">
-                                <!-- Days generated via JS -->
+                                <!-- Dias gerados por JS -->
                             </div>
                         </div>
 
                         <div id="slotsContainer" class="slots-container" style="display:none;">
-                            <!-- Slots generated via JS -->
+                            <!-- Horários gerados por JS -->
                         </div>
                     </div>
                 </div>
@@ -307,6 +305,9 @@
                     <div class="form-group">
                         <input type="email" class="form-control" id="buyerEmail" placeholder="E-mail">
                     </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="buyerPhone" placeholder="WhatsApp (ex: 11999999999)">
+                    </div>
 
                     <div id="payment-area">
                         <button
@@ -334,61 +335,12 @@
 
     <footer class="site-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
-                            <h2 class="footer-heading mb-4">Links Rápidos</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Sobre Nós</a></li>
-                                <li><a href="#">Serviços</a></li>
-                                <li><a href="#">Depoimentos</a></li>
-                                <li><a href="#">Fale Conosco</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
-                            <h2 class="footer-heading mb-4">Tratamentos</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Depilação a Cera</a></li>
-                                <li><a href="#">Massagem Relaxante</a></li>
-                                <li><a href="#">Pedras Quentes</a></li>
-                                <li><a href="#">Ventosaterapia</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
-                            <h2 class="footer-heading mb-4">Destaques</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Relaxamento</a></li>
-                                <li><a href="#">Bem-estar</a></li>
-                                <li><a href="#">Estética</a></li>
-                                <li><a href="#">Saúde</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
-                            <h2 class="footer-heading mb-4">Siga-nos</h2>
-                            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <h2 class="footer-heading mb-4">Assine nossa Newsletter</h2>
-                    <p>Receba novidades e promoções exclusivas diretamente no seu e-mail.</p>
-                    <form action="#" method="post" class="subscription">
-                        <div class="input-group mb-3  d-flex align-items-stretch">
-                            <input type="text" class="form-control bg-transparent" placeholder="Seu E-mail"
-                                aria-label="Enter Email" aria-describedby="button-addon2">
-                            <button class="btn btn-primary text-white" type="button" id="button-addon2">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
             <div class="row pt-5 mt-5">
-                <div class="col-12 text-md-center text-left">
+                <div class="col-12 text-center text-left">
                     <p>
-
+                        Desenvolvido por: <a href="index.html">dev.dev</a>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> Todos os direitos reservados
                     </p>
                 </div>
             </div>
@@ -426,8 +378,6 @@
     <script src="js/main.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
-    <!-- PayPal SDK -->
-    <!-- Banco Inter PIX Integration -->
 
     <script>
         // Dados dos Serviços
@@ -447,7 +397,8 @@
                     { name: 'Íntima completa', price: 'R$ 60,00', rawPrice: 60.00 },
                     { name: 'Nádegas', price: 'R$ 30,00', rawPrice: 30.00 },
                     { name: 'Meia perna', price: 'R$ 30,00', rawPrice: 30.00 },
-                    { name: 'Perna completa', price: 'R$ 50,00', rawPrice: 50.00 }
+                    { name: 'Perna completa', price: 'R$ 50,00', rawPrice: 50.00 },
+                    { name: 'serviço teste', price: 'R$ 1,00', rawPrice: 1.00 },
                 ]
             },
             'massage': {
@@ -477,13 +428,13 @@
             }
         };
 
-        // Get URL Params
+        // Pega os parâmetros da URL
         const urlParams = new URLSearchParams(window.location.search);
         const serviceId = urlParams.get('service') || 'waxing';
         const currentService = serviceData[serviceId] || serviceData['waxing'];
 
-        // Load Service Content
-        // Initialize current service with default values
+        // Carrega o conteúdo do serviço
+        // Inicializa o serviço atual com valores padrão
         let selectedOption = null;
         const originalTitle = currentService.title;
 
@@ -492,7 +443,7 @@
             let optionsHtml = '';
 
             if (currentService.options) {
-                // Default to first option
+                // Padrão para a primeira opção
                 selectedOption = currentService.options[0];
                 currentService.price = selectedOption.price;
                 currentService.rawPrice = selectedOption.rawPrice;
@@ -658,11 +609,19 @@
             const name = document.getElementById('buyerName').value;
             const cpf = document.getElementById('buyerCpf').value;
             const email = document.getElementById('buyerEmail').value;
+            const phone = document.getElementById('buyerPhone').value;
 
-            if (!name || !cpf || !email) {
+            if (!name || !cpf || !email || !phone) {
                 alert("Por favor, preencha todos os campos.");
                 return;
             }
+
+            if (!selectedDateObj) {
+                alert("Por favor, selecione uma data limite primeiro.");
+                return;
+            }
+
+            const selectedTime = document.getElementById('modalTime').innerText;
 
             // Chamada ao Backend (Banco Inter PIX)
             const backendUrl = "http://localhost:3000/api/pix/generate";
@@ -682,12 +641,14 @@
                     referenceId: 'REF-' + Date.now(),
                     serviceName: currentService.title, // Send service name
                     value: currentService.rawPrice,
+                    date: selectedDateObj.toISOString().split('T')[0],
+                    time: selectedTime,
                     buyer: {
                         firstName: name.split(' ')[0],
                         lastName: name.split(' ').slice(1).join(' ') || '',
                         document: cpf,
                         email: email,
-                        phone: '+55 27 12345-6789'
+                        phone: '+55' + phone.replace(/\D/g, '')
                     }
                 })
             })

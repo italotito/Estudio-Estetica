@@ -1,5 +1,74 @@
 [
   {
+    "id": "CRON-TEST-1772938584567",
+    "txid": "TX-1772938584567",
+    "date": "2026-03-08",
+    "time": "15:00",
+    "clientName": "Teste Cron Maria",
+    "clientEmail": "maria@test.com",
+    "clientPhone": "5581999977947",
+    "service": "Massagem",
+    "value": 100,
+    "status": "paid",
+    "clientConfirmed": false
+  },
+  {
+    "id": "REF-1772936128447",
+    "txid": "MOCK-TXID-1772936128542",
+    "date": "2026-03-08T02:15:28.542Z",
+    "clientName": "jose mario",
+    "clientEmail": "jose@mail.com",
+    "service": "Depilação a Cera - Buço",
+    "value": 15,
+    "status": "pending",
+    "provider": "inter_mock"
+  },
+  {
+    "id": "REF-1772837269987",
+    "txid": "MOCK-TXID-1772837270038",
+    "date": "2026-03-06T22:47:50.039Z",
+    "clientName": "MARIA ",
+    "clientEmail": "MARIA@EMAIL.COM",
+    "service": "Depilação a Cera - serviço teste",
+    "value": 1,
+    "status": "pending",
+    "provider": "inter_mock"
+  },
+  {
+    "id": "REF-1772836042102",
+    "txid": "MOCK-TXID-1772836042225",
+    "date": "2026-03-06T22:27:22.226Z",
+    "clientName": "maria jose",
+    "clientEmail": "mari@email.com",
+    "service": "Depilação a Cera - Buço",
+    "value": 15,
+    "status": "pending",
+    "provider": "inter_mock"
+  },
+  {
+    "id": "MANUAL-1772807543270",
+    "date": "2026-03-08T02:32:00.000Z",
+    "clientName": "maria clara",
+    "clientEmail": "agendamento@manual.com",
+    "service": "Pedras Quentes",
+    "value": 10,
+    "status": "confirmed",
+    "observation": "Agendamento Manual"
+  },
+  {
+    "id": "12345",
+    "txid": "MOCK-TXID-1772806451801",
+    "date": "2026-03-06T14:14:11.802Z",
+    "clientName": "Mock User",
+    "clientEmail": "mock@mock.com",
+    "service": "Test",
+    "value": 100.5,
+    "status": "paid",
+    "provider": "inter_mock",
+    "paidAt": "2026-03-06T14:15:37.758Z",
+    "paidValue": "100.50"
+  },
+  {
     "id": "MANUAL-1771504443786",
     "date": "2026-02-21T22:37:00.000Z",
     "clientName": "joao",
@@ -16,16 +85,6 @@
     "clientEmail": "agendamento@manual.com",
     "service": "Depilação a Cera",
     "value": 100,
-    "status": "confirmed",
-    "observation": "Agendamento Manual"
-  },
-  {
-    "id": "MANUAL-1771466505729",
-    "date": "2026-02-18T03:02:00.000Z",
-    "clientName": "123123",
-    "clientEmail": "agendamento@manual.com",
-    "service": "Depilação a Cera",
-    "value": 1233,
     "status": "confirmed",
     "observation": "Agendamento Manual"
   }
